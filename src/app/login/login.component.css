@@ -7,3 +7,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.googleIconStyle {
+    color: rgb(219,68,55);
+    font-size: 3em;
+}
+
+.facebookIconStyle {
+    color: rgb(66,103,178);
+    font-size: 3em;
+
+}
+
+.appleIconStyle {
+    color: rgb(163,170,174);
+    font-size: 3em;
+}
