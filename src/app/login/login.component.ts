@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { IconService } from '../services/icon.service';
+
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,11 @@ import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icon
 })
 export class LoginComponent implements OnInit {
 
-  facebookIcon = faFacebook;
-  googleIcon = faGoogle;
-  appleIcon = faApple;
+  facebookIcon = this.iconService.facebookIcon;
+  googleIcon = this.iconService.googleIcon;
+  appleIcon = this.iconService.appleIcon;
 
-
-
-  constructor() { }
+  constructor(private iconService: IconService) { }
 
   ngOnInit(): void {
   }

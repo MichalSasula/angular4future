@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAngleDown, faCog, faVideo, faGraduationCap, faTrophy, faFire, faBrain, faSyncAlt, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { IconService } from '../services/icon.service';
 
 @Component({
   selector: 'app-home',
@@ -8,19 +8,19 @@ import { faAngleDown, faCog, faVideo, faGraduationCap, faTrophy, faFire, faBrain
 })
 export class HomeComponent implements OnInit {
 
-  angleDownIcon = faAngleDown;
-  caretRightIcon = faCaretRight;
-  cogIcon = faCog;
-  videoIcon = faVideo;
-  graduationIcon = faGraduationCap;
-  trophyIcon = faTrophy;
-  fireIcon = faFire;
-  brainIcon = faBrain;
-  reloadIcon = faSyncAlt;
+  angleDownIcon = this.iconService.angleDownIcon;
+  caretRightIcon = this.iconService.caretRightIcon;
+  cogIcon = this.iconService.cogIcon;
+  videoIcon = this.iconService.videoIcon;
+  graduationIcon = this.iconService.graduationIcon;
+  trophyIcon = this.iconService.trophyIcon;
+  fireIcon = this.iconService.fireIcon;
+  brainIcon = this.iconService.brainIcon;
+  reloadIcon = this.iconService.reloadIcon;
 
 
 
-  constructor() { }
+  constructor(private iconService: IconService) { }
 
   ngOnInit(): void {
   }

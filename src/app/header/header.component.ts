@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChessPawn, faCartPlus, faUser, faBell } from '@fortawesome/free-solid-svg-icons';
+import { IconService } from '../services/icon.service';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +8,12 @@ import { faChessPawn, faCartPlus, faUser, faBell } from '@fortawesome/free-solid
 })
 export class HeaderComponent implements OnInit {
 
-  pawnIcon = faChessPawn;
-  cartIcon = faCartPlus;
-  userIcon = faUser;
-  bellIcon = faBell;
+  pawnIcon = this.iconService.pawnIcon;
+  cartIcon = this.iconService.cartIcon;
+  userIcon = this.iconService.userIcon;
+  bellIcon = this.iconService.bellIcon;
 
-  constructor() { }
+  constructor(private iconService: IconService) { }
 
   ngOnInit(): void {
   }
