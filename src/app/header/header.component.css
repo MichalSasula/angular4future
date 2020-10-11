@@ -1,0 +1,4 @@
+.angleDownWrapper::after {
+    border: none;
+    content: ""
+}
