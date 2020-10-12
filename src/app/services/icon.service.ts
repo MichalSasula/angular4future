@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { faAngleDown, faCog, faVideo, faGraduationCap, faTrophy, faFire, faBrain, faSyncAlt, faCaretRight, faChessPawn, faCartPlus, faUser, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faCog, faVideo, faGraduationCap, faTrophy, faFire, faBrain, faSyncAlt, faCaretRight, faChessPawn, faCartPlus, faUser, faBell, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 @Injectable({
@@ -23,6 +23,7 @@ export class IconService {
   facebookIcon = faFacebook;
   googleIcon = faGoogle;
   appleIcon = faApple;
+  moonIcon = faMoon;
 
   constructor() { }
 }

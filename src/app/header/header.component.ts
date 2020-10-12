@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   cartIcon = this.iconService.cartIcon;
   userIcon = this.iconService.userIcon;
   bellIcon = this.iconService.bellIcon;
+  cogIcon = this.iconService.cogIcon;
+  moonIcon = this.iconService.moonIcon;
 
   constructor(private iconService: IconService) { }
 
