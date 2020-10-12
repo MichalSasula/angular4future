@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div>
     <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand">DiscoverYourChess</a>
@@ -10,42 +10,42 @@
   <div class="collapse navbar-collapse border-left" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link">Shop</a>
+        <a class="nav-link" i18n="navigation button|this button redirects user to shop">Shop</a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown">Tools</a>
-        <div ngbDropdownMenu class="dropdown-menu">
-          <a ngbDropdownItem class="dropdown-item">Your courses</a>
-          <a ngbDropdownItem class="dropdown-item">Pawn shop</a>
-          <a ngbDropdownItem class="dropdown-item">Forum</a>
-          <a ngbDropdownItem class="dropdown-item">Difficult moves</a>
-          <a ngbDropdownItem class="dropdown-item">Opening explorer</a>
-          <a ngbDropdownItem class="dropdown-item">Analysis board</a>
-          <a ngbDropdownItem class="dropdown-item">Openings base</a>
-          <a ngbDropdownItem class="dropdown-item">Openings bookmarks</a>
-          <a ngbDropdownItem class="dropdown-item">Create course</a>
-          <a ngbDropdownItem class="dropdown-item">Your wishlist</a>
-          <a ngbDropdownItem class="dropdown-item">Friends wishlists</a>
+        <a ngbDropdownToggle class="nav-link dropdown" i18n="Navigation button|tools button in navbar">Tools</a>
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover" aria-labelledby="dropdownMenuButton">
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to list of all user courses">Your courses</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to pawn shop">Pawn shop</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to forum">Forum</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to difficult moves path">Difficult moves</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to opening explorer path">Opening explorer</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to analysis board path">Analysis board</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to openings base">Openings base</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to openings bookmarks">Openings bookmarks</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to create course path">Create course</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to user wishlist">Your wishlist</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to friends wishlist">Friends wishlists</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Premium</a>
+        <a class="nav-link" i18n="navigation button| this button allows you to buy premium version">Premium</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Trainers</a>
+        <a class="nav-link" i18n="navigation button| this button redirects user to trainers section">Trainers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Help</a>
+        <a class="nav-link" i18n="navigation button| this button redirects user to trainers section">Help</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Language</a>
-        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-          <a ngbDropdownItem class="dropdown-item">English</a>
-          <a ngbDropdownItem class="dropdown-item">Polish</a>
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="choseLanguage" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" i18n="navigation button| change default language of website">English</a>
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover" aria-labelledby="choseLanguage">
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to polish">Polish</a>
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to english">Deutsch</a>
         </div>
       </li>
     </ul>
@@ -65,14 +65,29 @@
       </a>
     </li>
     <li ngbDropdown class="nav-item dropdown">
-      <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a ngbDropdownToggle class="nav-link dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n="user name|username login nick">
         <fa-icon [icon]="userIcon"></fa-icon>
         WojoBojo
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
-        <a ngbDropdownItem class="dropdown-item">English</a>
-        <a ngbDropdownItem class="dropdown-item">Polish</a>
-        <a ngbDropdownItem class="dropdown-item">Italiano</a>
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover" aria-labelledby="userDropdown">
+        <div class="dropdown-item">
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user profile">
+            <fa-icon [icon]="userIcon"></fa-icon>
+            Profile
+          </a>
+        </div>
+        <div class="dropdown-item">
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user settings">
+            <fa-icon [icon]="cogIcon"></fa-icon>
+            Settings
+          </a>
+        </div>
+        <div class="dropdown-item">
+          <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user settings">
+            <fa-icon [icon]="moonIcon"></fa-icon>
+            Dark mode
+          </a>
+        </div>
       </div>
     </li>
     <li ngbDropdown class="nav-item dropdown">
@@ -80,7 +95,7 @@
         <fa-icon [icon]="bellIcon"></fa-icon>
         <span class="badge badge-danger badge-pill">4</span>
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover darkerOnHover">
         <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
         <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
         <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
