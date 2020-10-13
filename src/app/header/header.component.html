@@ -14,7 +14,7 @@
       </li>
       <li ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown" i18n="Navigation button|tools button in navbar">Tools</a>
-        <div ngbDropdownMenu class="dropdown-menu darkerOnHover" aria-labelledby="dropdownMenuButton">
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover my-0 py-0" aria-labelledby="dropdownMenuButton">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to list of all user courses">Your courses</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to pawn shop">Pawn shop</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to forum">Forum</a>
@@ -43,7 +43,7 @@
       <li ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="choseLanguage" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false" i18n="navigation button| change default language of website">English</a>
-        <div ngbDropdownMenu class="dropdown-menu darkerOnHover" aria-labelledby="choseLanguage">
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover py-0" aria-labelledby="choseLanguage">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to polish">Polish</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to english">Deutsch</a>
         </div>
@@ -69,7 +69,7 @@
         <fa-icon [icon]="userIcon"></fa-icon>
         WojoBojo
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover" aria-labelledby="userDropdown">
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover py-0" aria-labelledby="userDropdown">
         <div class="dropdown-item">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user profile">
             <fa-icon [icon]="userIcon"></fa-icon>
@@ -91,7 +91,7 @@
       </div>
     </li>
     <li ngbDropdown class="nav-item dropdown">
-      <a ngbDropdownToggle class="nav-link dropdown-toggle angleDownWrapper">
+      <a ngbDropdownToggle class="nav-link dropdown-toggle angleDownWrapper" aria-expanded="false">
         <fa-icon [icon]="bellIcon"></fa-icon>
         <span class="badge badge-danger badge-pill">4</span>
       </a>
