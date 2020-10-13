@@ -95,10 +95,36 @@
         <fa-icon [icon]="bellIcon"></fa-icon>
         <span class="badge badge-danger badge-pill">4</span>
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover darkerOnHover">
-        <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
-        <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
-        <a ngbDropdownItem class="dropdown-item">Cokolwiek</a>
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover mx-0 my-0 px-0 py-0 messagesDropdown">
+        <div ngbDropdownItem class="col-12 dropdown-item border-bottom text-right">   
+          <a >Read all</a>
+        </div>
+        <div ngbDropdownItem class="col-12 dropdown-item border-bottom">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <span style="font-size: 1em;">
+                <fa-icon [icon]="envelopeIcon"></fa-icon>
+              </span>
+            </div>
+            <div class="col">
+              <p style="white-space: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officiis ducimus aliquam debitis unde repudiandae enim qui, distinctio voluptates explicabo ipsum et facere nisi, repellat, vel vitae ab nesciunt quia.</p>
+            </div>
+          </div>
+        </div>
+        <div ngbDropdownItem class="col-12 dropdown-item border-bottom">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <span style="font-size: 1em;">
+                <fa-icon [icon]="envelopeIcon"></fa-icon>
+              </span>
+            </div>
+            <div class="col">
+              <p style="white-space: normal;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ad eius in facere rerum et accusantium veritatis dolorum esse? Consequatur doloribus beatae commodi vitae recusandae cum quo expedita omnis quia?</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </li>
   </ul>
