@@ -5,3 +5,8 @@
     background-color: #e9ecef;
 }
 
+.pointerOnHover:hover {
+    cursor: pointer;
+}
+
+

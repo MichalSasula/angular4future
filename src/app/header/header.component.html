@@ -4,17 +4,17 @@
       aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand">DiscoverYourChess</a>
+    <a class="navbar-brand pointerOnHover">DiscoverYourChess</a>
   </div>
 
   <div class="collapse navbar-collapse border-left" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" i18n="navigation button|this button redirects user to shop">Shop</a>
+        <a class="nav-link pointerOnHover" i18n="navigation button|this button redirects user to shop">Shop</a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown" i18n="Navigation button|tools button in navbar">Tools</a>
-        <div ngbDropdownMenu class="dropdown-menu darkerOnHover my-0 py-0" aria-labelledby="dropdownMenuButton">
+        <a ngbDropdownToggle class="nav-link dropdown pointerOnHover" i18n="Navigation button|tools button in navbar">Tools</a>
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover my-0 py-0 pointerOnHover" aria-labelledby="dropdownMenuButton">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to list of all user courses">Your courses</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to pawn shop">Pawn shop</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirects to forum">Forum</a>
@@ -28,22 +28,22 @@
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to friends wishlist">Friends wishlists</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pointerOnHover">
         <a class="nav-link" i18n="navigation button| this button allows you to buy premium version">Premium</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pointerOnHover">
         <a class="nav-link" i18n="navigation button| this button redirects user to trainers section">Trainers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pointerOnHover">
         <a class="nav-link" i18n="navigation button| this button redirects user to trainers section">Help</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="choseLanguage" data-toggle="dropdown" aria-haspopup="true"
+        <a ngbDropdownToggle class="nav-link dropdown-toggle pointerOnHover" id="choseLanguage" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false" i18n="navigation button| change default language of website">English</a>
-        <div ngbDropdownMenu class="dropdown-menu darkerOnHover py-0" aria-labelledby="choseLanguage">
+        <div ngbDropdownMenu class="dropdown-menu darkerOnHover py-0 pointerOnHover" aria-labelledby="choseLanguage">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to polish">Polish</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to english">Deutsch</a>
         </div>
@@ -52,24 +52,24 @@
   </div>
 
   <ul class="navbar-nav">
-    <li class="nav-item">
+    <li class="nav-item pointerOnHover">
       <a class="nav-link">
         <span class="badge badge-light badge-pill">20</span>
         <fa-icon [icon]="pawnIcon"></fa-icon>
       </a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item pointerOnHover">
       <a class="nav-link">
         <span class="badge badge-light badge-pill">15</span>
         <fa-icon [icon]="cartIcon"></fa-icon>
       </a>
     </li>
-    <li ngbDropdown class="nav-item dropdown">
-      <a ngbDropdownToggle class="nav-link dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n="user name|username login nick">
+    <li ngbDropdown class="nav-item dropdown ">
+      <a ngbDropdownToggle class="nav-link dropdown-toggle pointerOnHover" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n="user name|username login nick">
         <fa-icon [icon]="userIcon"></fa-icon>
         WojoBojo
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover py-0" aria-labelledby="userDropdown">
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover py-0 pointerOnHover" aria-labelledby="userDropdown">
         <div class="dropdown-item">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user profile">
             <fa-icon [icon]="userIcon"></fa-icon>
@@ -91,11 +91,11 @@
       </div>
     </li>
     <li ngbDropdown class="nav-item dropdown">
-      <a ngbDropdownToggle class="nav-link dropdown-toggle angleDownWrapper" aria-expanded="false">
+      <a ngbDropdownToggle class="nav-link dropdown-toggle angleDownWrapper pointerOnHover" aria-expanded="false">
         <fa-icon [icon]="bellIcon"></fa-icon>
         <span class="badge badge-danger badge-pill">4</span>
       </a>
-      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover mx-0 my-0 px-0 py-0 messagesDropdown">
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover mx-0 my-0 px-0 py-0 messagesDropdown pointerOnHover">
         <div ngbDropdownItem class="col-12 dropdown-item border-bottom text-right">   
           <a >Read all</a>
         </div>
