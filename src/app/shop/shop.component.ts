@@ -10,7 +10,7 @@ export class ShopComponent implements OnInit {
 
   barsIcon = this.iconService.barsIcon;
   thLargeIcon = this.iconService.thLargeIcon;
-  currentRate = 4.5;
+  currentRate = 3.71;
 
   constructor(private iconService: IconService) { }
 

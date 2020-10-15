@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShopComponent } from './shop/shop.component';
+import { DecimalRatingComponent } from './decimal-rating/decimal-rating.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ShopComponent } from './shop/shop.component';
     LoginComponent,
     HomeComponent,
     FooterComponent,
-    ShopComponent
+    ShopComponent,
+    DecimalRatingComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,6 @@ import { ShopComponent } from './shop/shop.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DecimalRatingComponent]
 })
 export class AppModule { }

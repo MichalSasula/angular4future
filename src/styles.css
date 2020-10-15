@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bootstrap-primary-color: #007bff;
+}
+
 
 .darkerOnHover .dropdown-item:hover {
     background-color: #e9ecef;
