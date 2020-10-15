@@ -4,13 +4,13 @@
       aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand pointerOnHover">DiscoverYourChess</a>
+    <a routerLink='/home' routerLinkActive='active' class="navbar-brand pointerOnHover">DiscoverYourChess</a>
   </div>
 
   <div class="collapse navbar-collapse border-left" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link pointerOnHover" i18n="navigation button|this button redirects user to shop">Shop</a>
+        <a routerLinkActive="active" routerLink="/shop" class="nav-link pointerOnHover" i18n="navigation button|this button redirects user to shop">Shop</a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown pointerOnHover" i18n="Navigation button|tools button in navbar">Tools</a>
@@ -86,6 +86,12 @@
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user settings">
             <fa-icon [icon]="moonIcon"></fa-icon>
             Dark mode
+          </a>
+        </div>
+        <div class="dropdown-item">
+          <a routerLink="/auth" routerLinkActive="active" ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user settings">
+            <fa-icon [icon]="signOutIcon"></fa-icon>
+            Sign out
           </a>
         </div>
       </div>

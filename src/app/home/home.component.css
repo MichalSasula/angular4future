@@ -2,10 +2,6 @@
     width: 60px;
 }
 
-.homeComponentMargins {
-    margin-left: 10em;
-    margin-right: 10em;
-}
 
 .tableWithoutTopBorder thead tr th{
     border-top: none;

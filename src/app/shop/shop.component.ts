@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconService } from '../services/icon.service';
 
 @Component({
   selector: 'app-shop',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor() { }
+  barsIcon = this.iconService.barsIcon;
+  thLargeIcon = this.iconService.thLargeIcon;
+
+  constructor(private iconService: IconService) { }
 
   ngOnInit(): void {
   }

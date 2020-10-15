@@ -1,12 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
 .darkerOnHover .dropdown-item:hover {
-    /* background-color: #e9ecef; */
     background-color: #e9ecef;
+}
+
+.blackOnHover:hover {
+    color: #000;
+}
+
+.grayColor {
+    color: gray;
 }
 
 .pointerOnHover:hover {
     cursor: pointer;
 }
 
+.mainComponentMargins {
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 0.5em;
+}
 
