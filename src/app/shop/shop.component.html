@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row mainComponentMargins">
-    <aside class="col-3 border-right my-3">
+    <aside class="col-2 border-right my-3">
       <div class="row">
         <form>
           <h4>Offers</h4>
@@ -88,16 +88,16 @@
               </label>
             </div>
             <div class="form-row mt-1">
-                <div class="col-4">
-                    <div class="form-group">
-                        <input class="form-control" type="text" id="priceMin" placeholder="$Min">
-                    </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <input class="form-control" type="text" id="priceMin" placeholder="$Min">
                 </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <input class="form-control" type="text" id=priceMax placeholder="$Max">
-                    </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <input class="form-control" type="text" id=priceMax placeholder="$Max">
                 </div>
+              </div>
             </div>
           </div>
           <h4>Difficulty</h4>
@@ -164,7 +164,7 @@
       </div>
 
     </aside>
-    <section class="col-9">
+    <section class="col-10">
       <nav class="navbar navbar-expand navbar-light border-bottom py-0 px-0">
         <ul class="navbar-nav d-flex align-items-end">
           <li class="nav-item">
@@ -177,7 +177,18 @@
           <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
+          <li ngbDropdown class="nav-item dropdown my-2">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle" id="coursesAmount" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              10 products
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu darkerOnHover blackOnHover my-0 py-0" aria-labelledby="coursesAmount">
+              <a ngbDropdownItem class="dropdown-item">20 products</a>
+              <a ngbDropdownItem class="dropdown-item">30 products</a>
+              <a ngbDropdownItem class="dropdown-item">100 products</a>
+            </div>
+          </li>
           <li class="nav-item blackOnHover grayColor">
             <span class="ml-2" style="font-size: 2em; font-weight: bold;">
               <fa-icon [icon]="barsIcon"></fa-icon>
@@ -190,6 +201,58 @@
           </li>
         </ul>
       </nav>
+      <div class="row mt-2">
+        <div class="col-12 mt-4 mb-1 d-flex align-items-center">
+
+                <h6 class="mr-2">Sort: </h6>
+                <div ngbDropdown class="dropdown show">
+                    <h6 ngbDropdownToggle class="dropdown-toggle" role="button" id="sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Featured
+                    </h6>
+                  
+                    <div ngbDropdownMenu class="dropdown-menu darkerOnHover my-0 py-0" aria-labelledby="sort">
+                      <a ngbDropdownItem class="dropdown-item">Price: Low to High</a>
+                      <a ngbDropdownItem class="dropdown-item">Price: High to Low</a>
+                      <a ngbDropdownItem class="dropdown-item">Avg. Users Review</a>
+                      <a ngbDropdownItem class="dropdown-item">Newest Arrivals</a>
+                    </div>
+                  </div>
+
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="row mx-1 my-2">
+              <div class="col courseCardHeader px-1">
+                <img src="assets/photos/courseImg.jpg" class="w-100" alt="course image">
+                <div class="col">
+                  <div class="row align-items-center">
+                    <div class="col-6">
+                      <ng-template #t let-fill="fill">
+                        <span class="star" [class.full]="fill === 100">
+                          <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+                        </span>
+                      </ng-template>
+                      <ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating>
+                    </div>
+                    <div class="col-6 progress px-0">
+                      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Winning strategies for white</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">cokolwiek</div>
+        </div>
+      </div>
     </section>
 
   </div>

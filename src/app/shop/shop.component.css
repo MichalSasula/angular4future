@@ -1,0 +1,10 @@
+
+.courseCardHeader {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.courseImg {
+    width: 100%;
+    height: auto;
+}
