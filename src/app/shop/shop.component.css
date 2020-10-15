@@ -8,3 +8,7 @@
     width: 100%;
     height: auto;
 }
+
+.blueBorder {
+    border: 1px solid var(--bootstrap-primary-color);
+}
