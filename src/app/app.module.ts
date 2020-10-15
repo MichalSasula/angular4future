@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShopComponent } from './shop/shop.component';
 import { DecimalRatingComponent } from './decimal-rating/decimal-rating.component';
+import { BuyPremiumFeatureComponent } from './buy-premium-feature/buy-premium-feature.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DecimalRatingComponent } from './decimal-rating/decimal-rating.componen
     HomeComponent,
     FooterComponent,
     ShopComponent,
-    DecimalRatingComponent
+    DecimalRatingComponent,
+    BuyPremiumFeatureComponent
   ],
   imports: [
     BrowserModule,
