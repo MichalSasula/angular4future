@@ -222,30 +222,80 @@
 
         </div>
         <div class="col-6">
-          <div class="card">
-            <div class="row mx-1 my-2">
-              <div class="col courseCardHeader px-1">
-                <img src="assets/photos/courseImg.jpg" class="w-100" alt="course image">
+          <div class="card py-2 px-3">
+            <div class="row">
+              <div class="col-12 courseCardHeader">
+                <img src="assets/photos/courseImg.jpg" class="courseImg" alt="course image">
                 <div class="col">
                   <div class="row align-items-center">
                     <div class="col-auto">
                       <app-decimal-rating [currentRate]="currentRate"></app-decimal-rating>
                     </div>
-                    <div class="col progress px-0 ml-1 blueBorder" style="height: 1.75em; margin-top: 0.35em;">
-                      <div class="progress-bar border-right bg-light" role="progressbar" style="width: 25%" aria-valuenow="15"
-                        aria-valuemin="0" aria-valuemax="100"><p class="text-secondary my-0">beginner</p></div>
+                    <div class="col progress  blueBorder px-0" style="height: 1.75em; margin-top: 0.35em;">
+                      <div class="progress-bar border-right bg-light" role="progressbar" style="width: 25%"
+                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        <p class="text-secondary my-0">beginner</p>
+                      </div>
                       <div class="progress-bar border-right" role="progressbar" style="width: 25%" aria-valuenow="30"
                         aria-valuemin="0" aria-valuemax="100">intermediate</div>
                       <div class="progress-bar border-right" role="progressbar" style="width: 25%" aria-valuenow="20"
                         aria-valuemin="0" aria-valuemax="100">advanced</div>
-                      <div class="progress-bar border-right bg-light" role="progressbar" style="width: 25%" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100"><p class="text-secondary my-0">expert</p></div>
+                      <div class="progress-bar border-right bg-light" role="progressbar" style="width: 25%"
+                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <p class="text-secondary my-0">expert</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title">Winning strategies for white</h5>
+                  <div class="row align-items-center">
+                    <div class="col-12 mt-1">
+                      <h4 class="card-title mb-0 border-bottom">Winning strategies for white</h4>
                     </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-6">
+                          <p>Category: Endgame/Strategy</p>
+                        </div>
+                        <div class="col-6">
+                          <p>
+                            Created by: WojoBojo
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto pr-0">
+                      <p class="mb-0">
+                        Material to learn:
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <p class="mb-0">
+                        <fa-icon [icon]="videoIcon"></fa-icon>1h20min
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <p class="mb-0">
+                        <fa-icon [icon]="graduationIcon"></fa-icon>29 variations
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-1">
+                <div class="price price-success">
+                  <div class="corner">
+                    <div class="corner-text">
+                      Discount!
+                    </div>
+                  </div>
+                  <div class="">
+                    <h3 class="lead">
+                      A success offer
+                    </h3>
+                    <p>
+                      And a little description.
+                      <br> and so one
+                    </p>
                   </div>
                 </div>
               </div>

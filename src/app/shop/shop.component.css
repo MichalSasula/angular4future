@@ -1,14 +1,45 @@
 
 .courseCardHeader {
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 25% 1fr;
 }
 
 .courseImg {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .blueBorder {
     border: 1px solid var(--bootstrap-primary-color);
 }
+
+.corner{    
+	border-style: solid; border-width: 0 70px 40px 0; float:right; height: 0px; width: 0px;
+	/* transform:rotate(360deg); */
+}
+
+.price{
+	border:1px solid #ddd;
+}
+
+.price-success {	border-color: #5cb85c; }
+.price-success .corner{
+	border-color: transparent #5cb85c transparent transparent;
+}
+
+.price-primary {	border-color: #428bca; }
+.price-primary .corner{
+	border-color: transparent #428bca transparent transparent;
+}
+
+.price-danger {	border-color: #d9534f; }
+.price-danger .corner{
+	border-color: transparent #d9534f transparent transparent;
+}
+
+.corner-text{
+	color:#fff; font-size:12px; font-weight:bold; position:relative; right:-40px; top:2px; white-space: nowrap;
+	transform:rotate(30deg);
+}	
+
+

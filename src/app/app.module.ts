@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ShopComponent } from './shop/shop.component';
 import { DecimalRatingComponent } from './decimal-rating/decimal-rating.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,6 @@ import { DecimalRatingComponent } from './decimal-rating/decimal-rating.componen
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, DecimalRatingComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
