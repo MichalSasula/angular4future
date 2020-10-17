@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
 import { ShopComponent } from './shop/shop.component';
+import { TrainersComponent } from './trainers/trainers.component';
 
 const appRoutes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
     {path: 'auth', component: LoginComponent},
     {path: 'premium', component: BuyPremiumFeatureComponent},
     {path: 'pawnShop', component: PawnShopComponent},
+    {path: 'trainers', component: TrainersComponent}
 ]
 
 @NgModule({

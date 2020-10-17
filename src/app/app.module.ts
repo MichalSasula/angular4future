@@ -13,6 +13,7 @@ import { ShopComponent } from './shop/shop.component';
 import { DecimalRatingComponent } from './decimal-rating/decimal-rating.component';
 import { BuyPremiumFeatureComponent } from './buy-premium-feature/buy-premium-feature.component';
 import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
+import { TrainersComponent } from './trainers/trainers.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
     ShopComponent,
     DecimalRatingComponent,
     BuyPremiumFeatureComponent,
-    PawnShopComponent
+    PawnShopComponent,
+    TrainersComponent
   ],
   imports: [
     BrowserModule,

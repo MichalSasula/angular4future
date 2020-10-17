@@ -1,7 +1,7 @@
 
 .courseCardHeader {
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 27.5% 1fr;
 }
 
 .courseImg {
