@@ -1,0 +1,25 @@
+.colWithImage {
+    display: grid;
+    place-items: center;
+    background-image: url("../../assets/photos/loginPhoto.jpg");
+    height: calc(100vh - 56px - 49px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.googleIconStyle {
+    color: rgb(219,68,55);
+    font-size: 3em;
+}
+
+.facebookIconStyle {
+    color: rgb(66,103,178);
+    font-size: 3em;
+
+}
+
+.appleIconStyle {
+    color: rgb(163,170,174);
+    font-size: 3em;
+}

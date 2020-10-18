@@ -1,0 +1,8 @@
+.angleDownWrapper::after {
+    border: none;
+    content: ""
+}
+
+.messagesDropdown {
+    width: 35em;
+}

@@ -1,0 +1,52 @@
+.angleDownWrapper {
+    width: 60px;
+}
+
+
+.tableWithoutTopBorder thead tr th{
+    border-top: none;
+}
+
+.friendImageWrapper, .badgeImageWrapper {
+    width: calc(100% / 6);
+    padding: calc(100% / 12);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.friendImageWrapper img, .badgeImageWrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 95%;
+    max-height: 95%;
+    min-width: 95%;
+    min-height: 95%;
+    margin-top: calc(-95% / 2);
+    margin-left: calc(-95% / 2);
+}
+
+.statisticImage {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+td .width30px {
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    color: black;
+}
+
+.angleDownWrapper::after {
+    border: none;
+    content: ""
+}
+
+.recentlyLearnedDropdownMenu {
+    margin-top: 0.6em;
+    margin-right: 0.3em;
+}
