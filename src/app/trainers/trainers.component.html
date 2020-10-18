@@ -5,14 +5,13 @@
         <form>
           <h4>Language</h4>
           <div class="from-group pl-3">
-            <div class="dropdown">
-                <button class="col-8 btn btn-dark dropdown-toggle" type="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div ngbDropdown class="dropdown">
+                <button ngbDropdownToggle class="col-8 btn btn-outline-dark dropdown-toggle" type="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   English
                 </button>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item">Action</a>
-                  <a class="dropdown-item">Another action</a>
-                  <a class="dropdown-item">Something else here</a>
+                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="language">
+                  <a ngbDropdownItem class="dropdown-item">Polish</a>
+                  <a ngbDropdownItem class="dropdown-item">Deutsch</a>
                 </div>
               </div>
           </div>
