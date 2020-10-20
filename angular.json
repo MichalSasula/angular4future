@@ -25,9 +25,16 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/chessboardjs/www/css/chessboard.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              // "./node_modules/stockfish/src/stockfish.js",
+              "./assets/stockfish.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/chess.js/chess.js",
+              "./node_modules/chessboardjs/www/js/chessboard.js"
+            ]
           },
           "configurations": {
             "production": {

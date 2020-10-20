@@ -14,6 +14,8 @@ import { DecimalRatingComponent } from './decimal-rating/decimal-rating.componen
 import { BuyPremiumFeatureComponent } from './buy-premium-feature/buy-premium-feature.component';
 import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
 import { TrainersComponent } from './trainers/trainers.component';
+import { OpeningExplorerComponent } from './opening-explorer/opening-explorer.component';
+import { ChessBoardComponent } from './chess-board/chess-board.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { TrainersComponent } from './trainers/trainers.component';
     DecimalRatingComponent,
     BuyPremiumFeatureComponent,
     PawnShopComponent,
-    TrainersComponent
+    TrainersComponent,
+    OpeningExplorerComponent,
+    ChessBoardComponent
   ],
   imports: [
     BrowserModule,
