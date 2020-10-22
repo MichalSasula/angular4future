@@ -31,7 +31,7 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
     PawnShopComponent,
     TrainersComponent,
     OpeningExplorerComponent,
-    ChessBoardComponent
+    ChessBoardComponent,
   ],
   imports: [
     BrowserModule,

@@ -29,8 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              // "./node_modules/stockfish/src/stockfish.js",
-              "./assets/stockfish.js",
+              "./node_modules/stockfish/src/stockfish.asm.js",
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/chess.js/chess.js",
               "./node_modules/chessboardjs/www/js/chessboard.js"
