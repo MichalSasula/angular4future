@@ -9,10 +9,10 @@
 
   <div class="collapse navbar-collapse border-left" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li *ngIf="isAuthenticated" class="nav-item">
         <a routerLinkActive="active" routerLink="/shop" class="nav-link pointerOnHover" i18n="navigation button|this button redirects user to shop">Shop</a>
       </li>
-      <li ngbDropdown class="nav-item dropdown">
+      <li *ngIf="isAuthenticated" ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown pointerOnHover" i18n="Navigation button|tools button in navbar">Tools</a>
         <div ngbDropdownMenu class="dropdown-menu darkerOnHover my-0 py-0 pointerOnHover" aria-labelledby="dropdownMenuButton">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to list of all user courses">Your courses</a>
@@ -28,13 +28,13 @@
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button|redirects to friends wishlist">Friends wishlists</a>
         </div>
       </li>
-      <li class="nav-item pointerOnHover">
+      <li *ngIf="isAuthenticated" class="nav-item pointerOnHover">
         <a routerLink="/premium" routerLinkActive="active" class="nav-link" i18n="navigation button| this button allows you to buy premium version">Premium</a>
       </li>
-      <li class="nav-item pointerOnHover">
+      <li *ngIf="isAuthenticated" class="nav-item pointerOnHover">
         <a routerLink="/trainers" routerLinkActive="active" class="nav-link" i18n="navigation button| this button redirects user to trainers section">Trainers</a>
       </li>
-      <li class="nav-item pointerOnHover">
+      <li *ngIf="isAuthenticated" class="nav-item pointerOnHover">
         <a class="nav-link" i18n="navigation button| this button redirects user to trainers section">Help</a>
       </li>
     </ul>
@@ -43,7 +43,7 @@
       <li ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown-toggle pointerOnHover" id="choseLanguage" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false" i18n="navigation button| change default language of website">English</a>
-        <div ngbDropdownMenu class="dropdown-menu darkerOnHover py-0 pointerOnHover" aria-labelledby="choseLanguage">
+        <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right darkerOnHover py-0 pointerOnHover" aria-labelledby="choseLanguage">
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to polish">Polish</a>
           <a ngbDropdownItem class="dropdown-item" i18n="navigation button| change default language to english">Deutsch</a>
         </div>
@@ -51,7 +51,7 @@
     </ul>
   </div>
 
-  <ul class="navbar-nav">
+  <ul *ngIf="isAuthenticated" class="navbar-nav">
     <li class="nav-item pointerOnHover">
       <a class="nav-link">
         <span class="badge badge-light badge-pill">20</span>
@@ -89,7 +89,8 @@
           </a>
         </div>
         <div class="dropdown-item">
-          <a routerLink="/auth" routerLinkActive="active" ngbDropdownItem class="dropdown-item" i18n="navigation button| redirect to user settings">
+          <a ngbDropdownItem class="dropdown-item" (click)="signout()"
+            i18n="navigation button| redirect to user settings">
             <fa-icon [icon]="signOutIcon"></fa-icon>
             Sign out
           </a>
@@ -129,13 +130,7 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </li>
   </ul>
-  
-
-
-
 </nav>

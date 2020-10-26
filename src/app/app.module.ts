@@ -16,6 +16,9 @@ import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
 import { TrainersComponent } from './trainers/trainers.component';
 import { OpeningExplorerComponent } from './opening-explorer/opening-explorer.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 
 
 @NgModule({
@@ -32,12 +35,15 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
     TrainersComponent,
     OpeningExplorerComponent,
     ChessBoardComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

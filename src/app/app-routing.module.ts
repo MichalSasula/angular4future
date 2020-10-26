@@ -5,12 +5,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { OpeningExplorerComponent } from './opening-explorer/opening-explorer.component';
 import { PawnShopComponent } from './pawn-shop/pawn-shop.component';
+import { AuthGuard } from './services/auth-guard';
 import { ShopComponent } from './shop/shop.component';
 import { TrainersComponent } from './trainers/trainers.component';
 
 const appRoutes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home',  component: HomeComponent},
+    {path: 'home',  component: HomeComponent, canActivate: [AuthGuard]},
     {path: 'shop',  component: ShopComponent},
     {path: 'auth', component: LoginComponent},
     {path: 'premium', component: BuyPremiumFeatureComponent},
